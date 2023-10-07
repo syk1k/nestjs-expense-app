@@ -12,9 +12,14 @@ export interface Report{
     type: ReportType
 }
 
-export interface ReportCreateReqData {
+export interface ReportCreate {
     source: string;
     amount: number;
+}
+
+export interface ReportUpdate{
+    source?: string;
+    amount?: number;
 }
 
 
@@ -35,7 +40,7 @@ export const data: Data = {
             type: ReportType.EXPENSE
         },
         {
-            id: "uiid2",
+            id: "d8d45b67-0b14-458d-be2d-a2c45dfef8b4",
             source: "Salary",
             amount: 7500,
             created_at: new Date(),
