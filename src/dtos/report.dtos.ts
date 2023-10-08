@@ -29,6 +29,8 @@ export class ReportResponseDto {
     id: string;
     source: string;
     amount: number;
+
+    @Exclude()
     created_at: Date;
 
     @Exclude()
