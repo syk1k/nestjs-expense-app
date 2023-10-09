@@ -6,7 +6,7 @@ import { ReportService } from './report.service';
 
 @Controller("report/:type")
 export class ReportController {
-    constructor(private readonly service: ReportService){}
+  constructor(private readonly service: ReportService){}
 
   @Get()
   getAllReports(@Param("type", new ParseEnumPipe(ReportType)) type: string){
