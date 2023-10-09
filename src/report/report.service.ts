@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { ReportType, data, ReportCreate, ReportUpdate } from  "../data"
 import { v4 as uuid } from "uuid"
-import { ReportResponseDto } from 'src/dtos/report.dtos';
+import { ReportResponseDto } from '../../src/dtos/report.dtos';
 
 @Injectable()
 export class ReportService {
